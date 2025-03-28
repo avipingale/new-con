@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.metalpushpull40mmclipbtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+        const flushForms = document.querySelectorAll('.flushform');
+        flushForms.forEach(form => form.reset());
+
+        // Hide elements
+        // document.getElementById('resultmetalpushpull40mmclip').classList.add('hidden');
+        document.getElementById('descriptionmetalpushpull40mmclip').classList.add('hidden');
+        document.getElementById('metalpushpull40mmclipnoimageContainer').classList.add('hidden');
+        document.getElementById('metalpushpull40mmclipncimageContainer').classList.add('hidden');
+        document.getElementById('Emetalpushpull40mmclipnoimageContainer').classList.add('hidden');
+        document.getElementById('Emetalpushpull40mmclipncimageContainer').classList.add('hidden');
+      
+        document.getElementById('metalpushpull40mmclipblackimageContainer').classList.add('hidden');
+       
+        document.getElementById('metalpushpull40mmclipredimageContainer').classList.add('hidden');
+      
+
+        // Hide plus buttons
+        document.getElementById('metalpushpull40mmclipplus1').style.display = 'none';
+        document.getElementById('metalpushpull40mmclipplus2').style.display = 'none';
+        document.getElementById('Emetalpushpull40mmclipplus2').style.display = 'none';
+
+    });
+});
+    
+  
+</script>
+
+
+<body>
+    
+    <div class="outputflex">
+
+        <div class="metalpushpull40mmclip">
+    
+                    <div class="option-group">
+                        <button class="option-btn btn-common metalpushpull40mmclipbtn"><div class="black-btn"></div>(P2AF2)</button>
+                        
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metalpushpull40mmclipbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetalpushpull40mmclipbtnnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetalpushpull40mmclipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetalpushpull40mmclipbtnnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetalpushpull40mmclipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metalpushpull40mmclipbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetalpushpull40mmclipbtnnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetalpushpull40mmclipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetalpushpull40mmclipbtnnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetalpushpull40mmclipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                </div>
+                            </div>
+              
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common metalpushpull40mmclipbtn"><div class="red-btn"></div>(P2AF4)</button>
+                      
+
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metalpushpull40mmclipbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="fourthmetalpushpull40mmclipbtnnbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="fourthmetalpushpull40mmclipbtninputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="fourthmetalpushpull40mmclipbtnnbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="fourthmetalpushpull40mmclipbtninputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metalpushpull40mmclipbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Efourthmetalpushpull40mmclipbtnnbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Efourthmetalpushpull40mmclipbtninputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Efourthmetalpushpull40mmclipbtnnbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Efourthmetalpushpull40mmclipbtninputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--  Button -->
+                                  
+                                </div>
+                                
+                        </div>
+                
+                                    
+                                </div>
+
+                         
+            
+  
+                        <script>
+                        
+                            
+                            // for metalsecond
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('secondmetalpushpull40mmclipbtnnno').addEventListener('click', function () {
+                                document.getElementById('secondinputmetalpushpull40mmclipbtnno').classList.remove('hidden');
+                                document.getElementById('secondinputmetalpushpull40mmclipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('secondmetalpushpull40mmclipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('secondinputmetalpushpull40mmclipbtnnc').classList.remove('hidden');
+                                document.getElementById('secondinputmetalpushpull40mmclipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+
+                            if (typeof SmetalpositiveNumberOnly === 'undefined') {
+    const SmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('secondinputmetalpushpull40mmclipbtnno').addEventListener('input', SmetalpositiveNumberOnly);
+    document.getElementById('secondinputmetalpushpull40mmclipbtnnc').addEventListener('input', SmetalpositiveNumberOnly);
+}
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function SmetalgenerateCode() {
+                                const noValue = document.getElementById('secondinputmetalpushpull40mmclipbtnno').value;
+                                const ncValue = document.getElementById('secondinputmetalpushpull40mmclipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetalpushpull40mmclip');
+                                const descriptionContainer = document.getElementById('descriptionmetalpushpull40mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetalpushpull40mmclip');
+                            
+                                // Image containers
+                                const metalpushpull40mmclipblackimageContainer = document.getElementById('metalpushpull40mmclipblackimageContainer');
+                                const metalpushpull40mmclipnoimageContainer = document.getElementById('metalpushpull40mmclipnoimageContainer');
+                                const metalpushpull40mmclipncimageContainer = document.getElementById('metalpushpull40mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metalpushpull40mmclipplus1 = document.getElementById('metalpushpull40mmclipplus1');
+                                const metalpushpull40mmclipplus2 = document.getElementById('metalpushpull40mmclipplus2');
+                            
+                                // Ensure black image is always visible
+                                metalpushpull40mmclipblackimageContainer.classList.remove('hidden');
+                                metalpushpull40mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                metalpushpull40mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = metalpushpull40mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metalpushpull40mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metalpushpull40mmclipnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metalpushpull40mmclipnoimageContainer.classList.remove('hidden');
+                                    metalpushpull40mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metalpushpull40mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metalpushpull40mmclipncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metalpushpull40mmclipncimageContainer.classList.remove('hidden');
+                                    metalpushpull40mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metalpushpull40mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P2PSF211",
+                                        "12": "P2PSF212",
+                                        "10": "P2PSF210",
+                                        "01": "P2PSF201",
+                                        "21": "P2PSF221",
+                                        "23": "P2PSF223",
+                                        "22": "P2PSF222",
+                                        "33": "P2PSF233",
+                                        "32": "P2PSF232",
+                                        "13": "P2PSF213",
+                                        "14": "P2PSF214",
+                                        "15": "P2PSF215",
+                                        "24": "P2PSF224",
+                                        "31": "P2PSF231",
+                                        "41": "P2PSF241",
+                                        "42": "P2PSF242",
+                                        "51": "P2PSF251",
+                                        "00": "P2PSF200",
+                                        "20": "P2PSF220",
+                                        "30": "P2PSF230",
+                                        "40": "P2PSF240",
+                                        "50": "P2PSF250",
+                                        "60": "P2PSF260",
+                                        "02": "P2PSF202",
+                                        "03": "P2PSF203",
+                                        "04": "P2PSF204",
+                                        "05": "P2PSF205",
+                                        "06": "P2PSF206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metalpushpull40mmclipnoimageContainer.classList.add('hidden');
+                                        metalpushpull40mmclipncimageContainer.classList.add('hidden');
+                                        metalpushpull40mmclipplus1.style.display = 'none';
+                                        metalpushpull40mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('secondinputmetalpushpull40mmclipbtnno').addEventListener('input', SmetalgenerateCode);
+                            document.getElementById('secondinputmetalpushpull40mmclipbtnnc').addEventListener('input', SmetalgenerateCode);
+                            
+                            // economy
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Esecondmetalpushpull40mmclipbtnnno').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetalpushpull40mmclipbtnno').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetalpushpull40mmclipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Esecondmetalpushpull40mmclipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetalpushpull40mmclipbtnnc').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetalpushpull40mmclipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ESmetalpositiveNumberOnly === 'undefined') {
+    const ESmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Esecondinputmetalpushpull40mmclipbtnno').addEventListener('input', ESmetalpositiveNumberOnly);
+                            document.getElementById('Esecondinputmetalpushpull40mmclipbtnnc').addEventListener('input', ESmetalpositiveNumberOnly);
+}
+
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function ESmetalgenerateCode() {
+                                const noValue = document.getElementById('Esecondinputmetalpushpull40mmclipbtnno').value;
+                                const ncValue = document.getElementById('Esecondinputmetalpushpull40mmclipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetalpushpull40mmclip');
+                                const descriptionContainer = document.getElementById('descriptionmetalpushpull40mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetalpushpull40mmclip');
+                            
+                                // Image containers
+                                const metalpushpull40mmclipblackimageContainer = document.getElementById('metalpushpull40mmclipblackimageContainer');
+                                const metalpushpull40mmclipnoimageContainer = document.getElementById('Emetalpushpull40mmclipnoimageContainer');
+                                const metalpushpull40mmclipncimageContainer = document.getElementById('Emetalpushpull40mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metalpushpull40mmclipplus1 = document.getElementById('metalpushpull40mmclipplus1');
+                                const metalpushpull40mmclipplus2 = document.getElementById('Emetalpushpull40mmclipplus2');
+                            
+                                // Ensure black image is always visible
+                                metalpushpull40mmclipblackimageContainer.classList.remove('hidden');
+                                metalpushpull40mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                metalpushpull40mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = metalpushpull40mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metalpushpull40mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metalpushpull40mmclipnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metalpushpull40mmclipnoimageContainer.classList.remove('hidden');
+                                    metalpushpull40mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metalpushpull40mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metalpushpull40mmclipncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metalpushpull40mmclipncimageContainer.classList.remove('hidden');
+                                    metalpushpull40mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metalpushpull40mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP2PSF211",
+                                        "12": "EP2PSF212",
+                                        "10": "EP2PSF210",
+                                        "01": "EP2PSF201",
+                                        "21": "EP2PSF221",
+                                        "23": "EP2PSF223",
+                                        "22": "EP2PSF222",
+                                        "33": "EP2PSF233",
+                                        "32": "EP2PSF232",
+                                        "13": "EP2PSF213",
+                                        "14": "EP2PSF214",
+                                        "15": "EP2PSF215",
+                                        "24": "EP2PSF224",
+                                        "31": "EP2PSF231",
+                                        "41": "EP2PSF241",
+                                        "42": "EP2PSF242",
+                                        "51": "EP2PSF251",
+                                        "00": "EP2PSF200",
+                                        "20": "EP2PSF220",
+                                        "30": "EP2PSF230",
+                                        "40": "EP2PSF240",
+                                        "50": "EP2PSF250",
+                                        "60": "EP2PSF260",
+                                        "02": "EP2PSF202",
+                                        "03": "EP2PSF203",
+                                        "04": "EP2PSF204",
+                                        "05": "EP2PSF205",
+                                        "06": "EP2PSF206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metalpushpull40mmclipnoimageContainer.classList.add('hidden');
+                                        metalpushpull40mmclipncimageContainer.classList.add('hidden');
+                                        metalpushpull40mmclipplus1.style.display = 'none';
+                                        metalpushpull40mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Esecondinputmetalpushpull40mmclipbtnno').addEventListener('input', ESmetalgenerateCode);
+                            document.getElementById('Esecondinputmetalpushpull40mmclipbtnnc').addEventListener('input', ESmetalgenerateCode);
+                            
+                          
+                            // fourthmetalpushpull40mmclipbtn
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('fourthmetalpushpull40mmclipbtnnbtnno').addEventListener('click', function () {
+                                document.getElementById('fourthmetalpushpull40mmclipbtninputno').classList.remove('hidden');
+                                document.getElementById('fourthmetalpushpull40mmclipbtninputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('fourthmetalpushpull40mmclipbtnnbtnnc').addEventListener('click', function () {
+                                document.getElementById('fourthmetalpushpull40mmclipbtninputnc').classList.remove('hidden');
+                                document.getElementById('fourthmetalpushpull40mmclipbtninputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                             
+                            if (typeof redgreenmetalpositiveNumberOnly === 'undefined') {
+    const redgreenmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+          // Add event listeners to enforce positive number restriction
+          document.getElementById('fourthmetalpushpull40mmclipbtninputno').addEventListener('input', redgreenmetalpositiveNumberOnly);
+                            document.getElementById('fourthmetalpushpull40mmclipbtninputnc').addEventListener('input', redgreenmetalpositiveNumberOnly);
+ 
+}
+             
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function redgreenmetalgenerateCode() {
+                                const noValue = document.getElementById('fourthmetalpushpull40mmclipbtninputno').value;
+                                const ncValue = document.getElementById('fourthmetalpushpull40mmclipbtninputnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetalpushpull40mmclip');
+                                const descriptionContainer = document.getElementById('descriptionmetalpushpull40mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetalpushpull40mmclip');
+                            
+                                // Image containers
+                                const metalpushpull40mmclipredimageContainer = document.getElementById('metalpushpull40mmclipredimageContainer');
+                                const metalpushpull40mmclipnoimageContainer = document.getElementById('metalpushpull40mmclipnoimageContainer');
+                                const metalpushpull40mmclipncimageContainer = document.getElementById('metalpushpull40mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metalpushpull40mmclipplus1 = document.getElementById('metalpushpull40mmclipplus1');
+                                const metalpushpull40mmclipplus2 = document.getElementById('metalpushpull40mmclipplus2');
+                            
+                                // Ensure red image is always visible
+                                metalpushpull40mmclipredimageContainer.classList.remove('hidden');
+                                metalpushpull40mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                metalpushpull40mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = metalpushpull40mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metalpushpull40mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metalpushpull40mmclipnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metalpushpull40mmclipnoimageContainer.classList.remove('hidden');
+                                    metalpushpull40mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metalpushpull40mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metalpushpull40mmclipncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metalpushpull40mmclipncimageContainer.classList.remove('hidden');
+                                    metalpushpull40mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metalpushpull40mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P2PSF411",
+                                        "12": "P2PSF412",
+                                        "10": "P2PSF410",
+                                        "01": "P2PSF401",
+                                        "21": "P2PSF421",
+                                        "23": "P2PSF423",
+                                        "22": "P2PSF422",
+                                        "33": "P2PSF433",
+                                        "32": "P2PSF432",
+                                        "13": "P2PSF413",
+                                        "14": "P2PSF414",
+                                        "15": "P2PSF415",
+                                        "24": "P2PSF424",
+                                        "31": "P2PSF431",
+                                        "41": "P2PSF441",
+                                        "42": "P2PSF442",
+                                        "51": "P2PSF451",
+                                        "00": "P2PSF400",
+                                        "20": "P2PSF420",
+                                        "30": "P2PSF430",
+                                        "40": "P2PSF440",
+                                        "50": "P2PSF450",
+                                        "60": "P2PSF460",
+                                        "02": "P2PSF402",
+                                        "03": "P2PSF403",
+                                        "04": "P2PSF404",
+                                        "05": "P2PSF405",
+                                        "06": "P2PSF406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metalpushpull40mmclipnoimageContainer.classList.add('hidden');
+                                        metalpushpull40mmclipncimageContainer.classList.add('hidden');
+                                        metalpushpull40mmclipplus1.style.display = 'none';
+                                        metalpushpull40mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('fourthmetalpushpull40mmclipbtninputno').addEventListener('input', redgreenmetalgenerateCode);
+                            document.getElementById('fourthmetalpushpull40mmclipbtninputnc').addEventListener('input', redgreenmetalgenerateCode);
+             
+                            // economay
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Efourthmetalpushpull40mmclipbtnnbtnno').addEventListener('click', function () {
+                                document.getElementById('Efourthmetalpushpull40mmclipbtninputno').classList.remove('hidden');
+                                document.getElementById('Efourthmetalpushpull40mmclipbtninputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Efourthmetalpushpull40mmclipbtnnbtnnc').addEventListener('click', function () {
+                                document.getElementById('Efourthmetalpushpull40mmclipbtninputnc').classList.remove('hidden');
+                                document.getElementById('Efourthmetalpushpull40mmclipbtninputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof EredgreenmetalpositiveNumberOnly === 'undefined') {
+    const EredgreenmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+         // Add event listeners to enforce positive number restriction
+         document.getElementById('Efourthmetalpushpull40mmclipbtninputno').addEventListener('input', EredgreenmetalpositiveNumberOnly);
+                            document.getElementById('Efourthmetalpushpull40mmclipbtninputnc').addEventListener('input', EredgreenmetalpositiveNumberOnly);
+                             
+}
+             
+                            
+                          
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function EredgreenmetalgenerateCode() {
+                                const noValue = document.getElementById('Efourthmetalpushpull40mmclipbtninputno').value;
+                                const ncValue = document.getElementById('Efourthmetalpushpull40mmclipbtninputnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetalpushpull40mmclip');
+                                const descriptionContainer = document.getElementById('descriptionmetalpushpull40mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetalpushpull40mmclip');
+                            
+                                // Image containers
+                                const metalpushpull40mmclipredimageContainer = document.getElementById('metalpushpull40mmclipredimageContainer');
+                                const metalpushpull40mmclipnoimageContainer = document.getElementById('Emetalpushpull40mmclipnoimageContainer');
+                                const metalpushpull40mmclipncimageContainer = document.getElementById('Emetalpushpull40mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metalpushpull40mmclipplus1 = document.getElementById('metalpushpull40mmclipplus1');
+                                const metalpushpull40mmclipplus2 = document.getElementById('Emetalpushpull40mmclipplus2');
+                            
+                                // Ensure red image is always visible
+                                metalpushpull40mmclipredimageContainer.classList.remove('hidden');
+                                metalpushpull40mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                metalpushpull40mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = metalpushpull40mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metalpushpull40mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metalpushpull40mmclipnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metalpushpull40mmclipnoimageContainer.classList.remove('hidden');
+                                    metalpushpull40mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metalpushpull40mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metalpushpull40mmclipncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metalpushpull40mmclipncimageContainer.classList.remove('hidden');
+                                    metalpushpull40mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metalpushpull40mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP2PSF411",
+                                        "12": "EP2PSF412",
+                                        "10": "EP2PSF410",
+                                        "01": "EP2PSF401",
+                                        "21": "EP2PSF421",
+                                        "23": "EP2PSF423",
+                                        "22": "EP2PSF422",
+                                        "33": "EP2PSF433",
+                                        "32": "EP2PSF432",
+                                        "13": "EP2PSF413",
+                                        "14": "EP2PSF414",
+                                        "15": "EP2PSF415",
+                                        "24": "EP2PSF424",
+                                        "31": "EP2PSF431",
+                                        "41": "EP2PSF441",
+                                        "42": "EP2PSF442",
+                                        "51": "EP2PSF451",
+                                        "00": "EP2PSF400",
+                                        "20": "EP2PSF420",
+                                        "30": "EP2PSF430",
+                                        "40": "EP2PSF440",
+                                        "50": "EP2PSF450",
+                                        "60": "EP2PSF460",
+                                        "02": "EP2PSF402",
+                                        "03": "EP2PSF403",
+                                        "04": "EP2PSF404",
+                                        "05": "EP2PSF405",
+                                        "06": "EP2PSF406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metalpushpull40mmclipnoimageContainer.classList.add('hidden');
+                                        metalpushpull40mmclipncimageContainer.classList.add('hidden');
+                                        metalpushpull40mmclipplus1.style.display = 'none';
+                                        metalpushpull40mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Efourthmetalpushpull40mmclipbtninputno').addEventListener('input', EredgreenmetalgenerateCode);
+                            document.getElementById('Efourthmetalpushpull40mmclipbtninputnc').addEventListener('input', EredgreenmetalgenerateCode);
+                        
+                    
+                            </script>
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultmetalpushpull40mmclip" class="result hidden">
+  
+     <p id="generated-codemetalpushpull40mmclip"></p>
+     <div id="descriptionmetalpushpull40mmclip" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ <!-- flush images -->
+ <div class="flushimg">
+   
+    <div class="image-container hidden" id="metalpushpull40mmclipblackimageContainer">
+        <img src="push/metalscrew/flush/black.png" alt="Product Image" class="product-image">
+        <div class="image-name">P2AF2</div>
+    </div>
+    <div class="image-container hidden" id="metalpushpull40mmclipredimageContainer">
+        <img src="push/metalscrew/flush/red.png" alt="Product Image" class="product-image">
+        <div class="image-name">P2AF4</div>
+    </div>
+    <div id="metalpushpull40mmclipplus1" class="plus-symbol" style="display: none;">+</div>
+
+    <div class="image-container hidden" id="metalpushpull40mmclipnoimageContainer">
+    <img src="pushbtn/images/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="metalpushpull40mmclipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="metalpushpull40mmclipncimageContainer">
+    <img src="push/metalscrew/images/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>
+</div>
+
+<div class="image-container hidden" id="Emetalpushpull40mmclipnoimageContainer">
+    <img src="push/metalscrew/Eimages/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="Emetalpushpull40mmclipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="Emetalpushpull40mmclipncimageContainer">
+    <img src="push/metalscrew/Eimages/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>    
+</div>
+    
+</div>
+
+
+ </div>
+
+</div>
+
+</body>
+</html>
